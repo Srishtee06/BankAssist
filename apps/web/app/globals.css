@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bank-navy: #17324D;
+  --bank-blue: #1B5E8A;
+  --bank-muted: #47677F;
+  --bank-warm-white: #FAFAF8;
+  --bank-light-grey: #F1F3F5;
+  --bank-white: #FFFFFF;
+  --bank-text-primary: #202A34;
+  --bank-text-secondary: #687581;
+  --bank-border: #E0E5E9;
+  --bank-teal: #327C78;
+}
+
+body {
+  background-color: #FAFAF8;
+  color: #202A34;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Institutional banking card styles */
+.banking-card {
+  background: #FFFFFF;
+  border: 1px solid #E0E5E9;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(23, 50, 77, 0.05);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.banking-card:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 12px rgba(23, 50, 77, 0.08);
+}
+
+.banking-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Restrained scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F3F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
